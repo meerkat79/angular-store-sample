@@ -1,0 +1,17 @@
+footer {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: left;
+  min-height: 3rem;
+  padding: 1rem;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+footer li.footer__item {
+  padding: 0.5rem;
+}

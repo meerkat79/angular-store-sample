@@ -1,0 +1,21 @@
+<section class="summary-container">
+  <h2>Your Items</h2>
+
+  You have selected {{items.length}} items.
+
+  <div class="summary-item" *ngFor="let item of items">
+    <span>{{item.label}} </span>
+    <span>{{item.price | currency}}</span>
+  </div>
+
+  <p>Total cost is: {{cost | currency}}</p>
+
+  <h3>Display in other currency:</h3>
+  <p>Please select your currency by clicking on any of the currencies as listed below</p>
+  <p>Cost in chosen currency: {{ conversion | currency: to }} <i>This is indicative value only, please see code and console error</i></p>
+
+  <ul>
+    <li *ngFor="let currency of currencyList | keyvalue " (click)="handleCurrencySelection($event)">{{currency.value}} - {{currency.key}}</li>
+  </ul>
+</section>
+

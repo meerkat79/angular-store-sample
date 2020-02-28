@@ -1,0 +1,11 @@
+<section class="products">
+  <h2>We have millions of items! Here are {{mockItems.length}}</h2>
+  <div class="products-container">
+    <div class="item" *ngFor="let item of mockItems">
+      <img src="{{item.img.path}}" alt="item.img.name">
+      <span>{{item.label}}</span>
+      <span>{{item.price | currency}}</span>
+      <button (click)="handleAddItem(item)">Add</button>
+    </div>
+  </div>
+</section>

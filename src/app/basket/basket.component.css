@@ -1,0 +1,26 @@
+.basket {
+  background-color: #ffffff;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  color: #333333;
+  display: flex;
+  justify-content: center;
+  min-height: 10rem;
+  position: absolute;
+  padding: 3px;
+  right: 1%;
+  text-align: center;
+  top: 7%;
+  width: 15%;
+}
+
+.basket-item {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.basket-total {
+  border-top: 2px double #1d237e;
+}

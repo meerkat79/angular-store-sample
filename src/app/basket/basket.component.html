@@ -1,0 +1,16 @@
+<div class="basket">
+  <div class="basket-items">
+    <h2>Shopping Basket</h2>
+    <div class="basket-item" *ngFor="let item of basketItems">
+      <span>{{item.label}}</span>
+      <span>{{item.price | currency}}</span>
+      <button (click)="handleRemoveBasketItem(item)">Remove</button>
+    </div>
+    <div class="basket-total">
+      <span>Total: {{cost | currency}}</span>
+    </div>
+    <div *ngIf="basketItems.length > 0">
+      <button (click)="handleCheckout()">Checkout</button>
+    </div>
+  </div>
+</div>
