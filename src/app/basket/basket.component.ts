@@ -12,10 +12,6 @@ export class BasketComponent implements OnInit {
   basketItems: [] = [];
   cost = 0;
 
-  // addCost = (val) => {
-  //   this.cost = this.cost + val;
-  // }
-
   reduceCost = (val) => {
     this.cost = this.cost - val;
     this.basketService.cost.emit(this.cost);
